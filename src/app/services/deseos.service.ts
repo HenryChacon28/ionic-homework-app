@@ -8,14 +8,11 @@ export class DeseosService {
 
   listas: Lista[] = [];
 
-
   constructor() {
 
     this.cargarStorage();
 
-
   }
-
 
   crearLista( titulo: string ) {
 
@@ -35,7 +32,6 @@ export class DeseosService {
 
   }
 
-
   obtenerLista( id: string | number ) {
 
     id = Number(id);
@@ -43,8 +39,6 @@ export class DeseosService {
     return this.listas.find(  listaData => listaData.id === id );
 
   }
-
-
 
   guardarStorage() {
 
@@ -59,9 +53,5 @@ export class DeseosService {
     } else {
       this.listas = [];
     }
-
-
   }
-
-
 }

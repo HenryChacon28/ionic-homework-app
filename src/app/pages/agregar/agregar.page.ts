@@ -54,7 +54,7 @@ export class AgregarPage implements OnInit {
 
     this.deseosService.guardarStorage();
 
-    console.log(this.deseosService.listas);
+    // console.log(this.deseosService.listas);
 
   }
 

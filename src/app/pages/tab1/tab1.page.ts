@@ -3,7 +3,6 @@ import { DeseosService } from '../../services/deseos.service';
 import { Router } from '@angular/router';
 import { AlertController } from '@ionic/angular';
 
-
 @Component({
   selector: 'app-tab1',
   templateUrl: 'tab1.page.html',
@@ -15,7 +14,6 @@ export class Tab1Page {
                private router: Router,
                private alertCtrl: AlertController ) {
   }
-
 
   async agregarLista() {
 
@@ -33,13 +31,13 @@ export class Tab1Page {
           text: 'Cancelar',
           role: 'cancel',
           handler: () => {
-            console.log('Cancelar');
+            // console.log('Cancelar');
           }
         },
         {
           text: 'Crear',
           handler: ( data ) => {
-            console.log(data);
+            // console.log(data);
             if ( data.titulo.length === 0 ) {
               return;
             }
@@ -56,6 +54,4 @@ export class Tab1Page {
     alert.present();
 
   }
-
-
 }
